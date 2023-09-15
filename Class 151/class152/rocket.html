@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="./rocket.js"></script>
+    
+</head>
+<body>
+    <a-scene background="color:black">
+        <a-camera position="0 -1 8"></a-camera>
+
+        <a-entity id="rocket" position="0 0 0" rotation="0 0 0" move-rocket>
+            <!-- <part 1> -->
+            <a-cone id="part 1" position="0 1.5 0" color="red" radius-bottom="0.5" radius-top="0.1"></a-cone>    
+
+            <!-- <part 2> -->
+            <a-cylinder id="part 2" position="0 -1 0" color="yellow" radius="0.5" height="4"></a-cylinder>
+
+            <!-- part3 -->
+            <a-cylinder id="part 3" position="0 -3 0" color="blue" radius="0.5" height="1" fall-down></a-cylinder >
+        </a-entity>
+
+    </a-scene>
+    
+</body>
+</html>
